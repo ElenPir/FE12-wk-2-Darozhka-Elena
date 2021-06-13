@@ -1,0 +1,117 @@
+.footer-container {
+    width: 100%;
+}
+
+.footer-top {
+    background-color: #3a3e64;
+    padding: 72px 50px 90px 50px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-top-row {
+    position: relative;
+    
+    @include for-phone-and-tablet-only {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.footer-top-row-item-a,
+.footer-top-row-item-c {
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+
+    @include for-phone-and-tablet-only {
+        position: relative;
+        top: auto;
+        margin: 0 auto;
+    }
+}
+
+.footer-top-row-item-a {
+    max-width: 300px;
+
+    @include for-phone-and-tablet-only {
+        left: auto;
+    }
+}
+
+.footer-top-row-item-c {
+    right: 15px;
+    max-width: 328px;
+
+    @include for-phone-and-tablet-only {
+        right: auto;
+    }
+}
+
+.footer-top-container-row-item-b {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-top-row-item-a,
+.footer-top-container-row-item-b,
+.footer-top-row-item-c {
+    @include for-phone-and-tablet-only {
+        padding: 35px 0 35px;
+    }
+}
+
+.footer-top-row-title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 11px;
+}
+
+.footer-top-row-discription-b {
+    display: flex;
+    flex-direction: row;
+    margin: auto;   
+}
+
+.footer-top-b-icon{
+    display: flex;
+    border: 2px solid rgba(255, 255, 255, 1);
+    width: 41px;
+    height: 41px;
+    justify-content: center; /*выравнивание по гориз*/
+    align-items: center; /*выравнивание по вертикали*/
+    transition: 0.3s;
+    margin: 5px;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.footer-icon{
+    font-size: 17px; /*размер шрифта*/
+    color: rgba(255, 255, 255, 1); /*цвет шрифта*/
+}
+
+.footer-bottom {
+    background-color: #313454;
+    padding: 0 15px;
+}
+
+.footer-bottom-copyright {
+    text-align: center;
+    padding: 30px 0;
+    color: #808080;
+}
+
+.footer-bottom-heart {
+    color: red;
+}
+
+.footer-bottom-text-by {
+    color: #ffffff;
+}
